@@ -2,11 +2,11 @@ package edu.kis.vh.stacks;
 
 public class Stack {
 
-	private static final int INIT_TOTAL = -1;
+	private static final int EMPTY_STACK_VALUE = -1;
 	private static final int NUM_OF_ITEMS = 12;
 
 	private int[] items = new int[NUM_OF_ITEMS];
-	private int total = INIT_TOTAL;
+	private int total = EMPTY_STACK_VALUE;
 
 	public int getTotal() {
 		return total;
