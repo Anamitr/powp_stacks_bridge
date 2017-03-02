@@ -1,7 +1,7 @@
 package edu.kis.vh.stacks.demo;
 
+import edu.kis.vh.stacks.Stack;
 import edu.kis.vh.stacks.StackHanoi;
-import edu.kis.vh.stacks.stack;
 import edu.kis.vh.stacks.factory.DefaultStacksFactory;
 
 class StacksDemo {
@@ -9,8 +9,8 @@ class StacksDemo {
 	public static void main(String[] args) {
 		DefaultStacksFactory factory = new DefaultStacksFactory();
 		
-		stack[] stacks = { factory.GetStandardStack(), factory.GetFalseStack(),
-				factory.GetFIFOStack(), factory.GetHanoiStack()};
+		Stack[] stacks = { factory.getStandardStack(), factory.getFalseStack(),
+				factory.getFIFOStack(), factory.getHanoiStack()};
 		
 		for (int i = 1; i < 15; i++)
 			for (int j = 0; j < 3; j++)
@@ -32,3 +32,19 @@ class StacksDemo {
 	}
 	
 }
+
+// 1.
+//Poprawione wiersze w klasie Stack:
+//Wiersze: 11, 14-32
+//Poprawione wiersze w klasie "StackFIFO":
+//Wiersze: 10, 15
+//Poprawione wiersze w klasie "StackHanoi":
+//Wiersze: 5,10,12-15
+
+// 2.
+//Kombinacja klawiszy alt + <- powoduje przełączanie do ostatnio otwartego pliku w Eclipse
+//alt + -> wraca z powrotem do ostatnio otwartego pliku
+
+// 8.
+//Zhermetyzowałem oba pola w klasie Node. Klasa StackList musi mieć do nich dostęp. Po enkapsulacji, miast odnosić się za pomocą ".",
+//klasa StackList używa getterów i setterów
