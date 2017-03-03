@@ -5,6 +5,8 @@ import org.junit.Test;
 
 import edu.kis.vh.stacks.Stack;
 
+// 3.2.1 Wszystkie testy przechodza pomyslnie
+
 public class stackTest {
 	
 	@Test
@@ -76,5 +78,4 @@ public class stackTest {
 		result = stackObj.pop();
 		Assert.assertEquals(EMPTY_STACK_VALUE, result);
 	}
-
 }
