@@ -1,6 +1,8 @@
 package edu.kis.vh.stacks.list;
 
-public class StackList {
+import edu.kis.vh.stacks.IStack;
+
+public class StackList implements IStack {
 	
 	public class Node {
 
@@ -37,7 +39,7 @@ public class StackList {
 	private static final int EMPTY_STACK_VALUE = -1;
 	private int total = EMPTY_STACK_VALUE;
 
-	public void pushElement(int i) {
+	public void push(int i) {
 		if (last == null)
 			last = new Node(i);
 		else {
@@ -48,22 +50,22 @@ public class StackList {
 		total++;
 	}
 
-	public boolean empty() {
+	public boolean isEmpty() {
 		return last == null;
 	}
 
-	public boolean full() {
+	public boolean isFull() {
 		return false;
 	}
 
-	public int peek() {
-		if (empty())
+	public int top() {
+		if (isEmpty())
 			return -1;
 		return last.getValue();
 	}
 
 	public int pop() {
-		if (empty())
+		if (isEmpty())
 			return -1;
 		int ret = last.getValue();
 		last = last.getPrev();
