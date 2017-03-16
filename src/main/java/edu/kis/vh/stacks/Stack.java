@@ -49,4 +49,5 @@ public class Stack {
 // 3.1.7 Wysyłając do konstruktora klasę implementującą interfejs IStack możemy wybrać sposób implementacji Stosu
 
 // 3.1.13 Navigate -> Open Declaration odnosi po prostu do interfejsu w ktorym metoda jest zadeklarowana, a Type Hierarchy
-// otwiera listę klas implementujących ten interfejs + daje podgląd składników wylistowanych klas
+// otwiera listę klas implementujących ten interfejs + daje podgląd składników wylistowanych klas.
+// Ctrl przy pracy myszki pozwala na otwarcie deklaracji funkcji lub implementacji w wybranej klasie
