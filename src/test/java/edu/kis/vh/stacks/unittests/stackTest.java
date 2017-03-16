@@ -4,7 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 import edu.kis.vh.stacks.Stack;
-import edu.kis.vh.stacks.list.StackArray;
+import edu.kis.vh.stacks.implementations.StackArray;
 
 // 3.2.1 Wszystkie testy przechodza pomyslnie
 
