@@ -59,7 +59,7 @@ public class StackList implements IStack {
 
 	public int top() {
 		if (isEmpty())
-			return -1;
+			return IStack.EMPTY_STACK_VALUE;
 		return last.getValue();
 	}
 

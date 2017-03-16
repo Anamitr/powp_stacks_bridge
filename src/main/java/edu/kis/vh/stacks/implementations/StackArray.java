@@ -4,9 +4,9 @@ import edu.kis.vh.stacks.IStack;
 
 public class StackArray implements IStack {
 
-	private static final int NUM_OF_ITEMS = 12;
+	private static final int SIZE = 12;
 
-	private int[] items = new int[NUM_OF_ITEMS];
+	private int[] items = new int[SIZE];
 	private int total = IStack.EMPTY_STACK_VALUE;
 
 	@Override
@@ -22,18 +22,18 @@ public class StackArray implements IStack {
 
 	@Override
 	public boolean isEmpty() {
-		return total == -1;
+		return total == IStack.EMPTY_STACK_VALUE;
 	}
 
 	@Override
 	public boolean isFull() {
-		return total == 11;
+		return total == SIZE;
 	}
 
 	@Override
 	public int top() {
 		if (isEmpty())
-			return -1;
+			return IStack.EMPTY_STACK_VALUE;
 		return items[total];
 	}
 
