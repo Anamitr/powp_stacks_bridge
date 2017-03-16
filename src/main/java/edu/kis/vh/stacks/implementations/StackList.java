@@ -36,8 +36,7 @@ public class StackList implements IStack {
 	}
 
 	private Node last;
-	private static final int EMPTY_STACK_VALUE = -1;
-	private int total = EMPTY_STACK_VALUE;
+	private int total = IStack.EMPTY_STACK_VALUE;
 
 	public void push(int i) {
 		if (last == null)

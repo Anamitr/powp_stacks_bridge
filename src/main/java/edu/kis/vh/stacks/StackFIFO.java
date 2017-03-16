@@ -16,4 +16,14 @@ public class StackFIFO extends Stack {
 
 		return ret;
 	}
+
+	public StackFIFO() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	public StackFIFO(IStack stackImplementation) {
+		super(stackImplementation);
+		// TODO Auto-generated constructor stub
+	}
 }

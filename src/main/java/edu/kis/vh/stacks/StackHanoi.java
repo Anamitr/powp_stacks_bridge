@@ -8,6 +8,14 @@ package edu.kis.vh.stacks;
  * 
  */
 public class StackHanoi extends Stack {
+	public StackHanoi() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	public StackHanoi(IStack stackImplementation) {
+		super(stackImplementation);
+		// TODO Auto-generated constructor stub
+	}
 	/**
 	 * Pole reprezentujace ilosc odrzuconych elementow
 	 */
