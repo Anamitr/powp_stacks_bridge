@@ -45,3 +45,5 @@ public class Stack {
 	}
 
 }
+
+// Przetestowalem opcje Navigate -> Open Declaration
