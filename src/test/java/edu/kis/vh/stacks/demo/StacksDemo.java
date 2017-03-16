@@ -3,6 +3,9 @@ package edu.kis.vh.stacks.demo;
 import edu.kis.vh.stacks.Stack;
 import edu.kis.vh.stacks.StackHanoi;
 import edu.kis.vh.stacks.factory.DefaultStacksFactory;
+import edu.kis.vh.stacks.factory.IstacksFactory;
+import edu.kis.vh.stacks.factory.StackArrayFactory;
+import edu.kis.vh.stacks.factory.StackListFactory;
 
 class StacksDemo {
 
@@ -10,10 +13,11 @@ class StacksDemo {
 		DefaultStacksFactory factory = new DefaultStacksFactory();
 		
 		testStacks(factory);
-		
+//		testStacks(new StackArrayFactory());
+//		testStacks(new StackListFactory());
 	}
 
-	private static void testStacks(DefaultStacksFactory factory) {
+	private static void testStacks(IstacksFactory factory) {
 		Stack[] stacks = { factory.getStandardStack(), factory.getFalseStack(),
 				factory.getFIFOStack(), factory.getHanoiStack()};
 		
