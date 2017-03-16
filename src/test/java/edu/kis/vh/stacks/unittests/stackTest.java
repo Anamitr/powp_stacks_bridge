@@ -12,7 +12,7 @@ public class stackTest {
 	
 	@Test
 	public void testPush() {
-		StackArray stackObj = new StackArray();
+		Stack stackObj = new Stack();
 		int testValue = 4;
 		stackObj.push(testValue);
 		
@@ -22,7 +22,7 @@ public class stackTest {
 
 	@Test
 	public void testIsEmpty() {
-		StackArray stackObj = new StackArray();
+		Stack stackObj = new Stack();
 		boolean result = stackObj.isEmpty();		
 		Assert.assertEquals(true, result);
 		
@@ -34,7 +34,7 @@ public class stackTest {
 
 	@Test
 	public void testIsFull() {
-		StackArray stackObj = new StackArray();
+		Stack stackObj = new Stack();
 		final int STACK_CAPACITY = 12;
 		for (int i = 0; i < STACK_CAPACITY; i++) {
 			boolean result = stackObj.isFull();		
@@ -48,7 +48,7 @@ public class stackTest {
 
 	@Test
 	public void testTop() {
-		StackArray stackObj = new StackArray();
+		Stack stackObj = new Stack();
 		final int EMPTY_STACK_VALUE = -1;
 		
 		int result = stackObj.top();
@@ -65,7 +65,7 @@ public class stackTest {
 
 	@Test
 	public void testPop() {
-		StackArray stackObj = new StackArray();
+		Stack stackObj = new Stack();
 		final int EMPTY_STACK_VALUE = -1;
 		
 		int result = stackObj.pop();
