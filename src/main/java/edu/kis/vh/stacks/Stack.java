@@ -45,3 +45,5 @@ public class Stack {
 }
 
 // Przetestowalem opcje Navigate -> Open Declaration
+
+// 3.1.7 Wysyłając do konstruktora klasę implementującą interfejs IStack możemy wybrać sposób implementacji Stosu
