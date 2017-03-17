@@ -51,3 +51,6 @@ public class Stack {
 // 3.1.13 Navigate -> Open Declaration odnosi po prostu do interfejsu w ktorym metoda jest zadeklarowana, a Type Hierarchy
 // otwiera listę klas implementujących ten interfejs + daje podgląd składników wylistowanych klas.
 // Ctrl przy pracy myszki pozwala na otwarcie deklaracji funkcji lub implementacji w wybranej klasie
+
+// 3.1.17 Wydaje mi się, że fabryka łamie zasadę izolacji, ponieważ od implementacji poszczególnych fabryk zależy jaką
+// dostaniemy klasę reprezentującą abstrakcję
