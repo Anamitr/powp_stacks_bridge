@@ -65,7 +65,7 @@ public class StackList implements IStack {
 
 	public int pop() {
 		if (isEmpty())
-			return -1;
+			return EMPTY_STACK_VALUE;
 		int ret = last.getValue();
 		last = last.getPrev();
 		total--;
